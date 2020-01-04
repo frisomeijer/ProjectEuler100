@@ -1,7 +1,7 @@
 composite = 600851475143
 
 def check_prime(number):
-# This function checks if the inpute number is a prime number for number>2
+# This function checks if the input number is a prime number for number>2
     for num in range(2,number):
         if number%num==0:
             break
