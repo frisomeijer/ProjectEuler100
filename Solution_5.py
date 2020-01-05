@@ -1,4 +1,6 @@
 import numpy as np
+import time
+start_time = time.time()
 
 def smallest_evenly_divisible_number(n):
 # Finds the smallest evenly divisible number by al numbers from 1 to n.
@@ -9,5 +11,6 @@ def smallest_evenly_divisible_number(n):
                 break
             if j==n:
                 return num
-                
-print(smallest_evenly_divisible_number(20))
+    
+print("smallest evenly divisble number: %s" % smallest_evenly_divisible_number(20))
+print("calculation time: %s seconds" % (time.time() - start_time))           
