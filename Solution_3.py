@@ -1,3 +1,15 @@
+'''
+Problem 3:
+    
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+'''
+
+import time
+
+start_time = time.time()
+
 composite = 600851475143
 
 def check_prime(number):
@@ -27,3 +39,6 @@ while composite >=2:
 # Calcualte maximum prime factor            
 max_prime_factor = max(prime_factors)
 print(max_prime_factor)            
+
+# calculation time: 0.6089754104614258 seconds
+print("calculation time: %s seconds" % (time.time() - start_time))   
